@@ -85,7 +85,7 @@ public class ExamenProgramacion extends JFrame {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(0, 102, 153));
-		panel_1.setBounds(0, 451, 434, 10);
+		panel_1.setBounds(-26, 451, 488, 31);
 		contentPane.add(panel_1);
 		
 		JPanel panel_2 = new JPanel();
@@ -275,7 +275,7 @@ public class ExamenProgramacion extends JFrame {
 		
 		
 	}
-	//------------------------------Utilizo Graphics para la imagen porque es mas sencillo para mi-------------------------------
+	//------------------------------Utilizo Graphics para las imagenes porque es mas sencillo para mi-------------------------------
 	public void paint(Graphics g) {
         super.paint(g);
         
@@ -289,9 +289,9 @@ public class ExamenProgramacion extends JFrame {
         	imagen2 = ImageIO.read(new File("imagenes/eliminarX.png"));
         	imagen3 = ImageIO.read(new File("imagenes/anadir.png"));
         	
-        	g2.drawImage(imagen,32,234,15,15,null,null);
-        	g2.drawImage(imagen2,353,234,15,15,null,null);
-        	g2.drawImage(imagen3,282,234,15,15,null,null);
+        	g2.drawImage(imagen,32,233,15,15,null,null);
+        	g2.drawImage(imagen2,353,233,15,15,null,null);
+        	g2.drawImage(imagen3,282,233,15,15,null,null);
         }catch(IOException e) {
         	e.printStackTrace();
         }
